@@ -4,10 +4,7 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
-
-## About Abdi Bimantara
+## About me
 
 My journey in cybersecurity started with a simple question: how do attackers actually get in, and why are they often unnoticed?
 
