@@ -4,8 +4,6 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-## About me
-
 My journey in cybersecurity started with a simple question: how do attackers actually get in, and why are they often unnoticed?
 
 That curiosity led me to explore security logs, attack patterns, and eventually the world of threat hunting. Over time, I found myself drawn to the challenge of connecting small pieces of data into meaningful insights turning what looks like normal activity into something that reveals a hidden threat.
