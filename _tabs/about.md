@@ -1,7 +1,9 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+title: Abdi Bimantara - Cyber Security Analyst & Threat Hunter
+description: Abdi Bimantara is a Cyber Security Analyst and Threat Hunter specializing in threat hunting, incident response, and security operations.
+order: 1
 ---
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
