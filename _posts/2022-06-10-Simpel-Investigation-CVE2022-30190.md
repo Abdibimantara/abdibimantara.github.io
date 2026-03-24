@@ -29,12 +29,6 @@ Target utama dari attacker tersebut menyasar ke Microsoft Windows  Support Diagn
 memanfaatkan zero day follina ini.  Terdapat suatu dokumen word yang bertemakan undangan untuk melakukan proses wawancara pada sputnk radio. Dimana dokuemen tersebut ditujukan khusus untuk pengguna di negara Russia.
 </p>
 
-![Desktop View](/posts/picture4.png){: width="972" height="589" }
-_Full screen width and center alignment_
-
-![Desktop View](/posts/picture5.png){: width="972" height="589" }
-_Full screen width and center alignment_
-
 Berikut adalah hasil analisa yang saya tuliskan dalam bentuk pdf [read more](https://github.com/Abdibimantara/CVE-2022-30190-Analysis-With-LetsDefends-Lab/blob/main/Simpel%20Investigation%20CVE%202022-30190.pdf)
 
 
