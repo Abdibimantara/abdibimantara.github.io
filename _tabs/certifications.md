@@ -17,7 +17,7 @@ Over the past few years, this journey in cybersecurity has been shaped through c
 ## 2026 
 ### Certified Blue Team Practitioner (CBTEAMER)
 date: 2026-03-20
-<p style="text-align:justify">A Certified Ethical Hacker (CEH) is a person trained to penetrate their own computer system or that of a client in order to determine what vulnerabilities exist and how to apply protective, corrective, and preventive countermeasures. This helps to mitigate risk and protect the system from being compromised by an unethical hacker or cybercriminal. The CEH is trained to look for weaknesses that can be exploited using the same tools a hacker would use to attack. Their job may include making recommendations for how to patch vulnerabilities or creating strategies to prevent malicious attacks.</p>
+<p style="text-align:justify">A Certified Blue Team Practitioner (CBTEAMER) from The SecOps Group is a cybersecurity professional trained to defend systems by actively monitoring, detecting, and responding to real-world threats. This certification focuses on the practical aspects of blue team operations, including log analysis, threat detection, incident response, and security monitoring across endpoints and networks. CBTEAMER professionals are equipped to identify suspicious activities, investigate potential security incidents, and implement effective mitigation strategies to reduce risk. Their role involves using security tools and frameworks to strengthen defensive capabilities, improve visibility, and ensure that organizations can quickly respond to and recover from cyber threats.</p>
 
 [Certification](https://www.linkedin.com/posts/abibimantara_alhamdulillah-thank-you-ec-council-activity-6990992140185067520-OLJe?utm_source=share&utm_medium=member_desktop)
 
