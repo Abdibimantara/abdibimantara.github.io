@@ -3,7 +3,7 @@ title: Elasic Case - Incident Response
 description: Incident Response
 author: abdi
 date: 2022-08-05 20:32
-categories: [Security Report]
+categories: [Write Up]
 tags: [SIEM, Elastic Case, Incident Response, Threat Hunting]
 pin: true
 math: true

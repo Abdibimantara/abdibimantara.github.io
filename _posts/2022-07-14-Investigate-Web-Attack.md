@@ -1,6 +1,6 @@
 ---
 title: Investigate Web Attack
-description: web Attack 
+description: Web Attack 
 author: abdi
 date: 2022-07-14 16:30
 categories: [Write Up]
