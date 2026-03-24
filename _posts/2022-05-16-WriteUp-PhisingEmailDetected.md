@@ -1,7 +1,7 @@
 ---
 title: WriteUp SOC-101 Phishing Email Detected Lets Defend
 description: WritetUp SOC-101 Phishing Email Detected
-author: Abimantara
+author: abdi
 date: 2022-05-16 23:40
 categories: [Write Up]
 tags: [CTF, Phising, Mail Analyzer]

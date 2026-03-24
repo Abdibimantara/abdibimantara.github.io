@@ -111,3 +111,8 @@ date: 2021-05-11
 [Certification](https://www.linkedin.com/posts/abibimantara_cyber-security-foundation-professional-certificate-activity-6799177057495592961-PD9S?utm_source=share&utm_medium=member_desktop)
 
 
+<style>
+.post-meta {
+  display: none !important;
+}
+</style>

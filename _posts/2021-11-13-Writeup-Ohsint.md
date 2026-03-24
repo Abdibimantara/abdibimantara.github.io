@@ -1,7 +1,7 @@
 ---
 title: Write UP OHSINT - Try Hackme
 description: Simple CTF from TryHackme
-author: Abimantara
+author: abdi
 date: 2021-11-13 22:13:20
 categories: [Write Up]
 tags: [CTF, Try Hack Me, Osint]

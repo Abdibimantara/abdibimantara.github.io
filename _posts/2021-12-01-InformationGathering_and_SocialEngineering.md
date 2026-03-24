@@ -1,7 +1,7 @@
 ---
 title: Information Gathering and Social Engineering in Indonesia
 description: Information Gathering and Social Engineering
-author: Abimantara
+author: abdi
 date: 2021-12-01 10:15
 categories: [General]
 tags: [Osint, Social Engineering, Information Gathering]

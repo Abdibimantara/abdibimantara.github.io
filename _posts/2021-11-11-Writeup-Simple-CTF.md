@@ -1,7 +1,7 @@
 ---
 title: Write UP Simple CTF
 description: Simple CTF from TryHackme
-author: Abimantara
+author: abdi
 date: 2021-11-11 21:45:15
 categories: [Write Up]
 tags: [CTF, Try Hack Me, Simple CTF]

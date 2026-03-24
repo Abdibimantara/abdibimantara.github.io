@@ -1,7 +1,7 @@
 ---
 title: WriteUp Net Sec Challenge TryHackme
 description: Wretup Net Sec Challenge
-author: Abimantara
+author: abdi
 date: 2022-01-03 17:15
 categories: [Write Up]
 tags: [Nmap, CTF, Try Hackme]
