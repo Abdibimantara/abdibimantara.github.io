@@ -14,17 +14,14 @@ I began my career in a Security Operations Center (SOC), where I learned the fun
 </p>
 ---
 
-## Tools & Technologies
+## Cybersecurity Learning Platforms
 <p style="text-align: justify;">
-To support these efforts, I leverage a broad range of cybersecurity tools across:
+Alongside professional experience, continuous learning plays an important role in this journey. Active participation in hands-on cybersecurity platforms such as :
 </p>
-- SIEM (Security Information and Event Management)
-- EDR (Endpoint Detection and Response)
-- XDR (Extended Detection and Response)
-- Network Security platforms
-- Threat Intelligence platforms
+- Lets Defend : <a href="https://app.letsdefend.io/user/abdi_bimantara684" target="_blank">Abdi Bimantara</a>
+- CyberDefenders : <a href="https://cyberdefenders.org/p/kukangletoy/" target="_blank">Abdi Bimantara</a>
+- Try Hackme : <a href="https://tryhackme.com/p/kukangletoy" target="_blank">Abdi Bimantara</a>
 
 <p style="text-align: justify;">
-My experience includes working with log management systems, endpoint protection solutions, and network monitoring tools. These technologies enable me to perform indepth investigations, validate threats with proper context, and continuously improve detection capabilities in a dynamic and evolving threat landscape. For more detailed information about my experience and background, feel free to download my <a href="https://drive.google.com/file/d/16LTc_qQG6ze3dGMbD7B6uvZk8HW32A7c/view?usp=sharing" target="_blank">Resume</a>.
+provides opportunities to sharpen practical skills through real-world scenarios, including threat hunting, incident investigation, and blue team exercises. These platforms serve as a space to continuously explore new techniques, validate knowledge, and stay aligned with the evolving threat landscape, while reinforcing a strong, hands-on approach to cybersecurity. For more detailed information about my experience and background, feel free to download my <a href="https://drive.google.com/file/d/16LTc_qQG6ze3dGMbD7B6uvZk8HW32A7c/view?usp=sharing" target="_blank">Resume</a>.
 </p>
-
