@@ -1,5 +1,5 @@
 ---
-title: CTF- EvilBox : One by Vulnhub
+title:  CTF-EvilBox:One by Vulnhub
 description: Evilbox Vulnhub Lab
 author: abdi
 date: 2023-04-09 23:45
