@@ -56,7 +56,7 @@ Namun yang mendukung aktivitas mengelola dan menghapus log event tersebut adalah
 <p style="text-align: justify;">
 Selanjutnya, kita diminta untuk mengetahui Class dari WMI (Windows Management Instrumentation) yang umum digunakan oleh attacker dalam melakukan malicious activity dan muncul disi log monitoring via Windows agent. Pertanyaan ini sangat bagus untuk membantu kita dalam mengetahui, Parameter commandline apa yang sering digunakan oleh threat actor terlebih spesifik menggunakan WMI. 
 <br><br>
-<img src="/posts/picture10.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture10.png">
 <br><br>
 Kami mengulangi langkah sebelumnya, dimana kembali melakukan research melalui google sampai kami mendapati informasi yang relevan. Umumnya threat actor akan menjalankan commandline sperti 
 </p>
@@ -79,7 +79,7 @@ Selanjutnya pertanyaan mengenai Powershel logging channel mana yang harus diakti
 <br>
 Berdasarkan informasi yang dimuat pada gambar gambar diras, terlihat bahwa untuk memonitoring berakitan dengan process execution, defender dapat memanfaatkan logging script block di powershell. Dimana melalui logging tersebut memungkinkan defender mengetahui adanya malicious process berdasarkan eventID 4104.
 <br><br>
-<img src="/posts/picture11.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture11.png">
 <br><br>
 </p>
 
@@ -91,9 +91,9 @@ Berdasarkan informasi yang dimuat pada gambar gambar diras, terlihat bahwa untuk
 <p style="text-align: justify;">
 Disini lebih mendalam untuk membahas mengenai buil-tin Cmdlet powershell mana yang umum digunakan oleh attacker dalam melakukan penghapusan log event disisi windows.
 <br><br>
-<img src="/posts/picture12.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture12.png">
 <br><br>
-<img src="/posts/picture13.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture13.png">
 <br><br>
 Berdasarkan hasil informasi yang kami baca seperti pada gambar diatas, terdapat 2 cmdlet yang dapat disalahgunakan oleh attacker dalam melakukan penghapusan log windows event. dimana 2 cmdlet tersebut adala clear event log dan remove event log.
 </p>
@@ -132,9 +132,9 @@ $log = New-Object System.Diagnostics.EventLog("Security")
 $log.Clear()
 ``` 
 <p style="text-align: justify;">
-<img src="/posts/picture14.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture14.png">
 <br><br>
-<img src="/posts/picture15.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture15.png">
 <br><br>
 
 Sehingga dari informasi yang kami dapatkan tersebut, maka jawaban untuk sola ke lima ini adalah EventLogSession.ClearLog & EventLog.Clear .
@@ -148,7 +148,7 @@ Sehingga dari informasi yang kami dapatkan tersebut, maka jawaban untuk sola ke 
 <p style="text-align: justify;">
 Untuk soal ini, kita sebagai defender diminta untuk memahami Eventid berapa yang dapat dimanfaatkan dalam memonitoring berkaitan dengan bukti penghapusan event log berhasil di windows. Disini kami mendapati bahwa eventID yang dapat dimanfaatkan adalah 1102 seeperti pada gambar dibawah ini. 
 <br>
-<img src="/posts/picture16.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture16.png">
 </p>
 
 ```bash
@@ -191,7 +191,7 @@ Note: PowerShell is operating in Constrained Language Mode, so your Sigma rule s
 <p style="text-align: justify;">
 Saatnya kita memasukin bagian practical. Dimana pada bagian ini, kita sebagai defender diminta untuk membuat sigma Rule untuk mendeteksi adanya aktivitas penghapusan log menggunakan scriptblock logging. untuk mendeteksinya, kita diberikan tools chainsaw serta historical data event log yang dapat diaksess.
 <br><br>
-<img src="/posts/picture17.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture17.png">
 <br><br>
 Disini kami membuat sigma rule yang dapat dilihat seperti dibawah ini : 
 </p>
@@ -229,7 +229,7 @@ level: high
 	<br>
 Dari hasil pencarian menggunakan tools dan sigma rule yang sudah dibuat seperti diatas tadi. kami mendapati jawabanya seperti pada gambar dibawah ini.
 
-<img src="/posts/picture18.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture18.png">
 	<br>
 </p>
 
@@ -278,7 +278,7 @@ level: medium
 
 <p style="text-align: justify;">
 	Dimana dari hasil penggunaan sigma rule berdasarkan log sysmon dan spesifik eventid 1, berhasil membantu kita untuk mengetahui adanya malicious commandline yang berhubungan dengan penghapusan log.
-<img src="/posts/picture19.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture19.png">
 </p>
 
 #### 3. Soal Ketiga,
@@ -312,7 +312,7 @@ falsepositives:
   - Legitimate admin activity
 level: medium
 ```
-<img src="/posts/picture20.png">
+<img src="https://github.com/Abdibimantara/abdibimantara.github.io/blob/main/posts/Picture20.png">
 
 <p style="text-align: justify;"> 
 Akhirnya, melalui dari lab ini kita sebagai defender dapat mengetahui dan mendeteksi aktivitas seperti penghapusan event log  bukan cuma soal tahu satu teknik, tapi bagaimana kita memahami berbagai cara attacker bekerja dan menerjemahkannya ke dalam detection yang efektif. Semoga tulisan ini bisa jadi gambaran sekaligus referensi buat kita semua yang lagi belajar ataupun mendalami detection engineering. Kalau ada pendekatan lain ataupun insight tambahan, feel free buat sharing juga ya karena di dunia blue team, belajar itu nggak pernah berhenti 🚀. 
