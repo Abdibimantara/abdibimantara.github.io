@@ -26,7 +26,7 @@ Di tulisan ini aku mau sharing gimana proses aku ngerjain lab ini—mulai dari e
 Within the CyberPredator Enterprise, you operate as a Detection & Hunting Engineer, translating adversary TTP research into operational detection capabilities. This workflow focuses on an in-depth analysis of Indicator Removal—specifically, Windows Event Log Clearing (T1070.001) as observed in campaigns attributed to APT28, APT41, and Aquatic Panda, aimed at degrading investigative visibility.
 <br>
 Your assignment is to deconstruct the Windows Event Log Clearing tradecraft—mapping associated tools, impacted event channels, and residual forensic traces. Following this, you will identify high-fidelity telemetry sources, craft resilient Sigma detection rules, and validate their efficacy against historical datasets using chainsaw, iteratively tuning detection logic before staging and production deployment.
-<br>
+<br><br>
 nahh dari cerita itu terbagi menjadi 2 section yaitu Tecnique Research dan Rule Deployment.
 </p>
 
