@@ -14,14 +14,14 @@ mermaid: true
   What’s interesting is that attackers don’t always need to exploit a vulnerability in the traditional sense. They can simply ride along trusted integrations to gain initial access. A study back in 2022, “Supply Chain Characteristics as Predictors of Cyber Risk,” actually highlighted this pretty well—basically showing that the more complex our digital ecosystem becomes, the higher the probability of cyber incidents.
 </p>
 
-![Desktop View](/posts/picture1.png){: width="972" height="589" }
+![Desktop View](https://raw.githubusercontent.com/Abdibimantara/abdibimantara.github.io/main/posts/Picture1.png){: width="972" height="589" }
 _Full screen width and center alignment_
 
 <p style="text-align:justify">
 And if you look at recent data, it really backs this up. The IBM X-Force Threat Intelligence Index 2026 reported that supply chain compromises have increased almost fourfold over the past five years. That’s a huge jump. It shows a clear shift in attacker strategy—moving toward abusing trust instead of just exploiting weaknesses.
 </p>
 
-![Desktop View](/posts/picture2.png){: width="972" height="589" }
+![Desktop View](https://raw.githubusercontent.com/Abdibimantara/abdibimantara.github.io/main/posts/Picture2.png){: width="972" height="589" }
 _Full screen width and center alignment_
 
 <p style="text-align:justify">
@@ -30,7 +30,7 @@ What makes it even more concerning is that this approach allows attacks to scale
 One case that really caught my attention was a campaign in the NPM ecosystem linked to something called Shai-Hulud. In this scenario, attackers injected malicious code into packages or published modified versions. When developers installed those packages, the malicious code would automatically run, stealing credentials like GitHub tokens, NPM credentials, and even cloud access keys. From there, those stolen credentials were used to compromise more packages, allowing the attack to spread further across the ecosystem.
 </p>
 
-![Desktop View](/posts/picture3.png){: width="972" height="589" }
+![Desktop View](https://raw.githubusercontent.com/Abdibimantara/abdibimantara.github.io/main/posts/Picture3.png){: width="972" height="589" }
 _Full screen width and center alignment_
 
 
