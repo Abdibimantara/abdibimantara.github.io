@@ -327,3 +327,4 @@ Akhirnya, melalui dari lab ini kita sebagai defender dapat mengetahui dan mendet
 - https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logging?view=powershell-5.1
 - https://learn.microsoft.com/en-us/previous-versions/windows/desktop/eventlogprov/cleareventlog-method-in-class-win32-nteventlogfile
 - https://github.com/WithSecureLabs/chainsaw
+- https://cyberdefenders.org/blueteam-ctf-challenges/sigmapredator/
