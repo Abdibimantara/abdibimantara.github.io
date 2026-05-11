@@ -24,7 +24,7 @@ mermaid: true
 <p style="text-align: justify;">
 	Bagian ini dimulai dengan apa sih itu RDP. RDP sendiri merupakan singkatan dari Remote Desktop Protocol, yaitu sebuah protokol milik Microsoft yang memungkinkan pengguna untuk melakukan akses dan mengontrol sebuah perangkat Windows dari jarak jauh melalui jaringan. Dengan menggunakan RDP, seorang user dapat melihat tampilan desktop, menjalankan aplikasi, hingga melakukan aktivitas administratif seolah-olah sedang berada langsung di depan perangkat tersebut.
 	<br><br>
-	<img src="posts/Picture21.png">
+	<img src="https://raw.githubusercontent.com/Abdibimantara/abdibimantara.github.io/main/posts/Picture21.png">
 	<br><br>
 	Dalam environment enterprise, penggunaan RDP sudah menjadi hal yang sangat umum, terutama untuk kebutuhan administrasi server, remote troubleshooting, maupun operasional harian tim IT. Karena sifatnya yang memberikan akses interaktif secara langsung ke sebuah sistem, aktivitas login melalui RDP biasanya akan tercatat di Windows Event Log sebagai Logon Type 10 atau RemoteInteractive. Tipe logon ini menjadi salah satu indikator penting yang sering digunakan analyst untuk mengidentifikasi aktivitas remote login pada endpoint maupun server Windows.
 	<br>
@@ -32,17 +32,17 @@ mermaid: true
 	<br>
 	Disini kami mensimulasikan dimana, adanya aktivitas RDP dari komputer Kami ke arah komputer lainnya. Disini terlihat bawah kami memasukkan Kredential yang sesuai dan berhasil login pada komputer target. Pararel kami juga melakukan validasi menggunakan windows event viewer untuk mengetahui apakah dari aktivitas RDP login tersebut tercatat sebagai log.
 	<br><br>
-	<img src="posts/Picture22.png">
+	<img src="https://raw.githubusercontent.com/Abdibimantara/abdibimantara.github.io/main/posts/Picture22.png">
 	<br><br>	
 	Namun hasil dari validasi yang kami lakukan, mendapatkan bahwa aktivitas RDP tersebut tidak dinyatakan sebagai logon type 10 melainkan logon type 3. Temuan ini terlihat berbeda bila berdasarkan referensi awal yang menyebukan bhawa Aktivitas RDP akan selalu memunculkan logon type 10. Berdasarkan informasi yang dimuat pada <a href = 'https://www.cyberengage.org/post/log-analysis-it-s-not-about-knowing-it-s-about-correlating'>cyberengage.org</a> mengkonfirmasi bahwa temuan tersebut valid adanya. 
 	<br><br>
-	<img src="posts/Picture23.png">
+	<img src="https://raw.githubusercontent.com/Abdibimantara/abdibimantara.github.io/main/posts/Picture23.png">
 	<br><br>
 	Dimana untuk RDP tidak selalu muncul sebagai Logon Type 10 (Remote Interactive) karena pada sistem modern umumnya sudah menggunakan Network Level Authentication (NLA), di mana proses autentikasi dilakukan terlebih dahulu melalui mekanisme jaringan (Kerberos atau NTLM) sebelum sesi RDP benar-benar dibuat. Proses awal ini tercatat sebagai Logon Type 3 (Network Logon), sehingga sering kali yang terlihat di log hanyalah Type 3 tanpa diikuti Type 10. Oleh karena itu, mengasumsikan bahwa RDP selalu identik dengan Logon Type 10 adalah keliru, karena aktivitas RDP juga bisa muncul sebagai Type 3 (autentikasi awal).
 	<br>
 	Sehingga untuk mendeteksi berkaitan aktivitas RDP, kita sebagai security analys tidak bisa hanya berdasarkan eventid 4624/4625 spesifik logontype 10. Sehingga diperlukan beberapa eventid pendukung seperti eventid 4778/4779 (session RDP) ataupun core RDP log activity yaitu eventid 1149 (RDP authentication berhasil) 
 	<br><br>
-	<img src="posts/Picture24.png">
+	<img src="https://raw.githubusercontent.com/Abdibimantara/abdibimantara.github.io/main/posts/Picture24.png">
 	<br><br>
 
 	Sehingga dari validasi dan testing yang kami lakukan, mendapatkan hasil bahwa untuk mendeteksi aktivitas RDP session tidak bisa hanya mengandalkan logontype 10. perlu adanya korelasi logic yang diterapkan pada perimeter detection untuk membantu security analyst dalam memonitoring malicious activity. Berikut adalasah final usecase logic untuk mendeteksi potential RDP connection tersebut :
